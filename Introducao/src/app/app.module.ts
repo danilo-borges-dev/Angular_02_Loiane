@@ -11,6 +11,7 @@ import { MeuQuartoComponent } from './meu-quarto/meu-quarto-component';
 import { MeuQuintoComponent } from './meu-quinto/meu-quinto-component';
 import { MeuSextoComponent } from './meu-sexto/meu-sexto.component';
 import { MeuSetimoComponentComponent } from './meu-setimo-component/meu-setimo-component.component';
+import { CursosModule } from './cursos/cursos.module';
 
 @NgModule({
   declarations: [	
@@ -21,12 +22,13 @@ import { MeuSetimoComponentComponent } from './meu-setimo-component/meu-setimo-c
     MeuQuartoComponent,
     MeuQuintoComponent,
     MeuSextoComponent,
-      MeuSetimoComponentComponent
+    MeuSetimoComponentComponent
    ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    CursosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
