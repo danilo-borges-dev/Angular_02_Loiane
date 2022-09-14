@@ -1,5 +1,9 @@
 <p>
-  cursos works!
+  Lista de Clientes do sistema {{nomeDoSistema}}
 </p>
 
-<app-curso-detalhe></app-curso-detalhe>
+<ul>
+  <li *ngFor="let cliente of clientes">
+    {{cliente}}
+  </li>
+</ul>
