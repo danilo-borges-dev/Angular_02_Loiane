@@ -8,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class CursosComponent implements OnInit {
 
   private nomeDoSistema: string;
-  clientes: string[] = [ "Ana Maria", "Eliza", "Silvinha Modas", "Madalena Modas" ];
+  clientes: string[] = [ 
+    "Ana Maria", 
+    "Eliza", 
+    "Silvinha Modas",
+    "Madalena Modas" 
+  ];
 
   constructor() { 
     this.nomeDoSistema = "SisControle"
