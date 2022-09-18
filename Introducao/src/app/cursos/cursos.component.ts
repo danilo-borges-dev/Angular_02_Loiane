@@ -5,18 +5,19 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './cursos.component.html',
   styleUrls: ['./cursos.component.css']
 })
+
 export class CursosComponent implements OnInit {
 
-  private nomeDoSistema: string;
-  clientes: string[] = [ 
-    "Ana Maria", 
-    "Eliza", 
-    "Silvinha Modas",
-    "Madalena Modas" 
+  private nomeDoSistema: string = "";
+  private clientes: string[] = [
+    "Ana Maria",
+    "Madalena",
+    "Silviha Modas",
+    "Moda Intima Feminina",
   ];
 
   constructor() { 
-    this.nomeDoSistema = "SisControle"
+    this.nomeDoSistema = "SisControle";
   }
 
   ngOnInit() {
