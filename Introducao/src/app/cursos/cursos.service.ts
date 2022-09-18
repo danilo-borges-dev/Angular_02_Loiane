@@ -5,12 +5,13 @@ export class CursosService {
 
   constructor() { }
 
-  GetClientes(){
-    return [
+  getClientes(){
+    return [ 
       "Ana Maria",
-      "Madalena",
-      "Silviha Modas",
-      "Moda Intima Feminina",
+      "Maria Madalena",
+      "Madá Modas",
+      "Silvinha Modas",
+      "Moda Femina",
     ];
   }
 }

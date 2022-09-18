@@ -10,12 +10,11 @@ import { CursosService } from './cursos.service';
 export class CursosComponent implements OnInit {
 
   private nomeDoSistema: string = "";
-  private clientes: string[];
+  private listaDeClientes: string[];
 
-  constructor(private cursosService: CursosService) { 
-
+  constructor(private clientes: CursosService) { 
     this.nomeDoSistema = "SisControle";
-    this.clientes = cursosService.GetClientes();
+    this.listaDeClientes = clientes.getClientes();
   }
 
   ngOnInit() {
