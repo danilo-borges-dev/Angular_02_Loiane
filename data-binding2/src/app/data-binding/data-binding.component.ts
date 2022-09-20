@@ -15,4 +15,7 @@ export class DataBindingComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getValor(){
+    return 7;
+  }
 }
