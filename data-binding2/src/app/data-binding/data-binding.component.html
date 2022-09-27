@@ -1,4 +1,4 @@
-<article>   
+<!-- <article>
     <h4>
         <p>
             Interpolação
@@ -23,4 +23,35 @@
     <p>
         Retornando um Valor: {{ getValor() }}
     </p>
-</article>
+</article> -->
+
+<div class="container">
+  <article>
+    <h3>Class Style Binding</h3>
+    <div>
+      Selecione uma Classe
+      <select #classe (change)="0">
+        <option value="alert-success">Success</option>
+        <option value="alert-danger">Danger</option>
+        <option value="alert-warning">Warning</option>
+        <option value="alert-primary">Primary</option>
+      </select>
+      <br>
+      <br>
+
+      <div class="alert" role="alert" [class.alert-success]="classe.value == 'alert-success'">
+        A simple success alert—check it out!
+      </div>
+      <div class="alert" role="alert" [class.alert-danger]="classe.value == 'alert-danger'">
+        A simple danger alert—check it out!
+      </div>
+      <div class="alert" role="alert" [class.alert-warning]="classe.value == 'alert-warning'">
+        A simple warning alert—check it out!
+      </div>
+      <div class="alert" role="alert" [class.alert-primary]="classe.value == 'alert-primary'">
+        A simple primary alert—check it out!
+      </div>
+    </div>
+  </article>
+</div>
+
